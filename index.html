@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball Simulation</title>
+</head>
+<body>
+    <h1>野球シミュレーション</h1>
+    <form id="uploadForm" action="https://your-backend-url/simulate" method="post" enctype="multipart/form-data">
+        <label for="batter_file">野手データ:</label>
+        <input type="file" id="batter_file" name="batter_file"><br>
+        <label for="pitcher_file">投手データ:</label>
+        <input type="file" id="pitcher_file" name="pitcher_file"><br>
+        <label for="schedule_file">日程データ:</label>
+        <input type="file" id="schedule_file" name="schedule_file"><br>
+        <button type="submit">シミュレーション開始</button>
+    </form>
+</body>
+</html>
